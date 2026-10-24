@@ -84,7 +84,7 @@ Más ajustes, con los archivos estándar de cada herramienta: `ruff.toml`, `.had
 
 ## Una vez por repo en GitHub
 
-1. **Settings → Advanced Security**: Dependabot alerts y security updates, Secret Protection + **Push protection**, Private vulnerability reporting y CodeQL (Default).
+1. **Settings → Advanced Security**: Private vulnerability reporting **Enable** · Dependency graph, Dependabot alerts, Dependabot security updates y Grouped security updates **On** · CodeQL analysis **Set up → Default** · **Push protection On**. Lo demás (AI Scan, Agentic autofix, Other tools) puede quedar Off.
 2. **Settings → Actions → General**: ✅ *Require actions to be pinned to a full-length commit SHA* · *Workflow permissions*: **Read**.
 3. **Settings → Environments → New environment** `produccion`: **Required reviewers** = tú · *Deployment branches and tags* → regla de tipo **Tag** `v*.*.*`.
 4. **Settings → Rules → Rulesets**: proteger `main` (sin borrar ni force push) y las etiquetas `v*` (sin mover ni borrar).
